@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: buildings
+  datasource:
+    password: password
+    url: jdbc:postgresql://localhost:5432/buildings
+    username: alexborza
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+geoapify:
+  api-key: cf312dd5b6da41f39d5bc9df90f29a5a
